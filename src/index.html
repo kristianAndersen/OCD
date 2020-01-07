@@ -1,12 +1,92 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <h1>💖 Hello World!</h1>
-    <p>Welcome to your Electron application.</p>
-  </body>
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+
+    <script>
+        window.__setTheme = () => {
+          let userTheme = localStorage.user_theme
+          let OSTheme = localStorage.os_theme
+          let defaultTheme = 'light'
+          document.documentElement.setAttribute(
+            'data-theme',
+            userTheme || OSTheme || defaultTheme,
+          )
+        }
+        __setTheme()
+      </script>
+
+      
+  <meta charset="utf-8">
+  <title>OCD</title>
+  <meta name="description" content="OCD One Click Directory">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <div class="cards-wrapper">
+     
+    <div class="card-container">
+   
+      <div class="card">
+          <div class="setting-bar">
+              <form name="input">
+                  <input type="text" class="jobname" name="jobname" value=" "><br>
+              </form>
+              <svg version="1.1" class="settingsBtn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+           <path d="M19.63,8.36l-2.57-0.42c-0.15-0.52-0.36-1.01-0.61-1.48l1.5-2.14c0.12-0.17,0.1-0.41-0.05-0.56l-1.69-1.69
+             c-0.15-0.15-0.39-0.17-0.56-0.05l-2.11,1.51c-0.47-0.26-0.97-0.47-1.49-0.62L11.6,0.36C11.57,0.15,11.39,0,11.18,0H8.78
+             C8.57,0,8.39,0.15,8.36,0.36L7.94,2.91C7.42,3.06,6.92,3.27,6.45,3.52l-2.1-1.5C4.17,1.9,3.94,1.92,3.78,2.07L2.09,3.76
+             C1.95,3.91,1.92,4.14,2.05,4.32l1.48,2.11C3.26,6.91,3.05,7.41,2.9,7.94L0.36,8.36C0.15,8.39,0,8.57,0,8.79v2.39
+             c0,0.21,0.15,0.39,0.36,0.43l2.54,0.45c0.15,0.52,0.36,1.03,0.63,1.5l-1.5,2.09c-0.12,0.17-0.1,0.41,0.05,0.56l1.69,1.69
+             c0.15,0.15,0.38,0.17,0.56,0.05l2.12-1.48c0.48,0.26,0.98,0.47,1.5,0.62l0.42,2.55C8.39,19.85,8.57,20,8.78,20h2.39
+             c0.21,0,0.39-0.15,0.43-0.36l0.45-2.56c0.52-0.15,1.02-0.36,1.49-0.62l2.13,1.5c0.17,0.12,0.41,0.1,0.56-0.05l1.69-1.69
+             c0.15-0.15,0.17-0.39,0.05-0.56l-1.52-2.11c0.26-0.47,0.46-0.97,0.61-1.48l2.57-0.45c0.21-0.04,0.36-0.22,0.36-0.43V8.79
+             C20,8.57,19.84,8.39,19.63,8.36z M10,13.04c-1.68,0-3.04-1.36-3.04-3.04S8.32,6.96,10,6.96s3.04,1.36,3.04,3.04
+             S11.68,13.04,10,13.04z"/>
+           </svg>
+          </div>
+
+        <div class="card-contents card-front">
+          <div class="card-depth">
+
+          </div>
+        </div>
+
+
+        <div class="card-contents card-back">
+            <div class="setting-bar"></div>
+          <div class="card-depth">
+
+              <div class="save"><p>save</p></div>
+              <div class="quitit"><p>Quit</p></div>
+
+            <ul>
+                  <li><input type="checkbox" class="checkbox" name="DLI" value="DLI"><p>DLI ?</p> </li>
+                  <li><input type="checkbox" class="checkbox" name="DLO" value="DLO"><p>DLO ?</p></li>
+                  <li><input type="checkbox" class="checkbox" name="GoogleDrive" value="Google Drive"><p>Google Drive</p></li> 
+                  <li><input type="checkbox" class="checkbox" name="Dropbox" value="Dropbox"><p>Dropbox</p></li>
+                  <li><input type="checkbox" class="checkbox" name="OneDriveDanskeSpil" value="OneDrive - Danske Spil"><p>OneDrive</p></li>  
+                  <li><input type="checkbox" class="checkbox" name="Mega" value="Mega"><p>Mega</p></li>  
+            </ul>
+       
+
+              </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <script  src="ocdapp.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.1/gsap.min.js"></script>
+</body>
+
 </html>

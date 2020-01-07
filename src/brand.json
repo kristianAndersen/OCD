@@ -1,0 +1,37 @@
+{
+    "DLI":{
+	"Oddset_odd": "#003e99",
+	"Youbet_yb": "#00b5ad",
+	"Swush_sws": "#00d283",
+	"Tips_tps": "#009a60",
+	"eOddset_eodd": "#003e99",
+	"Dantoto_dtt": "#dc5f11",
+	"Casino_cas": "#a78952",
+	"Livecasino_lc": "#294b4b",
+	"TivoliCasino_tc": "#806D3B",
+	"Spillehjørnet_sphj": "#7d96b4",
+	"Bingo_bng": "#A0d323",
+	"Poker_pkr": "#000000",
+	"eCom_ecom": "#999999",
+	"Intern_int": "#9ae5e4",
+	"DS_ds": "#004b32"
+    },
+    "DLO":{
+        "Lotto":"#c50005",
+        "Eurojackpot":"#910006",
+        "Alt eller indet":"#191339",
+        "Vikinglotto":"#0000ff",
+        "Keno":"#00a5eb",
+        "Quick":"#7f4488",
+        "DLO på tværs":"#c50005",
+        "Intern":"#9ae5e4",
+        "DS":"#004b32"
+    },
+    "ovn":{
+        
+    }
+}
+
+
+
+ 

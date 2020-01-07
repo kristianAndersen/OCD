@@ -1,6 +1,71 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: transparent;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding:0;
+  }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   margin: auto;
   max-width: 38rem;
   padding: 2rem;
+}
+.wrap{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  background: #333;
+  display: block;
+  position: absolute;
+  overflow: scroll;
+}
+.btnwrap{
+  position: relative;
+  width: 150px;
+  background: #666;
+  display: block;
+  position: absolute;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+
+.toppoint{
+  display: block;
+  position: absolute;
+  top:0px;
+  left:calc(75px - 25px);
+  width: 50px;
+  height:50px;
+  background:#333;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+
+.brandbtn{
+  display: block;
+  position: relative;
+  font-size: 0.5em;
+  cursor: pointer;
+  color: aliceblue;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding: 4px;
+}
+
+@media screen and (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
 }
